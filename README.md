@@ -1,6 +1,6 @@
-# React Boilerplate
+# iHangry
 
-Yet another starting point for creating React apps. This boilerplate uses React Router, Webpack, HMR, PostCSS & Express.
+Food review app for Make School's Web 3 - Advanced Web Patterns. This project was built using a boilerplate called [React-Express-Starter](https://github.com/bharani91/react-express-starter) and uses React Router, Webpack, HMR, PostCSS & Express. This project also uses a boilerplate CSS theme for bootstrap known as [Paper Kit Pro 2](https://www.creative-tim.com/product/paper-kit-2-pro).
 
 
 ### Demo
@@ -32,6 +32,5 @@ git push heroku master
 
 -------------------
 
+Boilerplate starter created by 
 bharanim [@bharani91](https://twitter.com/bharani91)
-
-Heavily inspired by [react-kickstart](https://github.com/vesparny/react-kickstart).
