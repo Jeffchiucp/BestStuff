@@ -24,11 +24,14 @@ app.use(require('webpack-hot-middleware')(compiler, {
   log: console.log
 }));
 
-app.get('*', function response(req, res) {
-  res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
-  res.end();
-});
+// app.get('*', function response(req, res) {
+//   res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
+//   res.end();
+// });
+
 app.use(express.static(path.join(__dirname, '/dist')))
+
+require('./controllers/categories')
 
 app.listen(config._hotPort, 'localhost', function (err) {
   if (err) {

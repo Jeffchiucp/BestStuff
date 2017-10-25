@@ -10,6 +10,8 @@ app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'dist/index.html'))
 })
 
+require('./controllers/categories')
+
 app.listen(app.get('port'), function (err) {
   if (err) {
     console.log(err)

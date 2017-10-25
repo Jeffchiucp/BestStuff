@@ -1,7 +1,7 @@
 module.exports = (app) => {
 
-  app.get('/', (req, res) => {
-    
+  app.get('/category', (req, res) => {
+    res.send('It works!')
   })
 
 }
