@@ -4,7 +4,7 @@ var webpack = require('webpack')
 var config = require('./webpack.config.development')
 var app = express()
 var compiler = webpack(config)
-var db = require('./models');
+// var db = require('./models');
 
 var middleware = require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath,
@@ -37,6 +37,6 @@ app.listen(config._hotPort, 'localhost', function (err) {
   if (err) {
     console.log(err)
   }
-  db.sequelize.sync();
+  // db.sequelize.sync();
   console.info('==> Listening on port %s. Open up http://localhost:%s/ in your browser.', config._hotPort, config._hotPort)
 })
