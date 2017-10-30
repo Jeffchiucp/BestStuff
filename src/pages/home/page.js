@@ -4,20 +4,7 @@ import { Link } from 'react-router';
 //import { ContestCard } from '../../shared/components/ContestCard';
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import testData from '../../testData.js';
-
-class ContestCard extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render () {
-    return (
-      <Link to={ `/contest/${this.props.id}` } className={styles.contestCard}>
-        <h3> {this.props.name} </h3>
-      </Link>
-    );
-  }
-}
+import ContestCard from '../../components/contest-card';
 
 class Home extends Component{
   constructor(props) {
@@ -40,7 +27,6 @@ class Home extends Component{
     return (
       <div className={styles.content}>
         <h1 className="page-title">iHangry</h1>
-        {/*<Link to="/about" className="btn">About page &rarr;</Link>*/}
         {this.getAllContests()}
       </div>
     );

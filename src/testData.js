@@ -4,6 +4,8 @@ export default {
     {
       name: "Best Burrito in SF",
       dateCreated: "10/25/2017",
+      lat: '37.7749',
+      lng: '122.4194',
       id: 1,
       items: [
         {
@@ -35,6 +37,8 @@ export default {
       name: "Best Vegan Food in the Bay Area",
       dateCreated: "10/2/2017",
       id: 3,
+      lat: '37.7749',
+      lng: '122.4194',
       items: [
         {
           name: 'Vegan Burrito',
@@ -49,6 +53,8 @@ export default {
     {
       name: "Best Hot Dogs in SF",
       dateCreated: "10/17/2017",
+      lat: '37.7749',
+      lng: '122.4194',
       id: 4,
       items: [
         {
@@ -69,6 +75,8 @@ export default {
       name: "Best Burgers in Oakland",
       dateCreated: "9/18/2017",
       id: 5,
+      lat: '37.8044',
+      lng: '122.2711',
       items: [
         {
           name: "Bl00 Ch33s3 Burg3r",

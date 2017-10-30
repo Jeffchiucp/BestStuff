@@ -4,11 +4,13 @@ import { Link } from 'react-router';
 //import { ContestCard } from '../../shared/components/ContestCard';
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import testData from '../../testData.js';
+const MAPS = "AIzaSyBBYy-u-ZsF-3krZWO2fpqp2LYp2noQRbs";
+const PLACES = "AIzaSyCh4He2DUJ9cCgC6kl31vAmpSH2cqGq0r4";
 
 class ItemCard extends Component {
   render() {
     return(
-      <div>
+      <div className={styles.itemContainer}>
         <h2> {this.props.name} </h2>
         <p> {this.props.loc} </p>
       </div>
@@ -42,15 +44,23 @@ export default class Contest extends Component{
     })
   }
 
+  getMap(lat, lng) {
+    
+  }
+
   render() {
     var contestId = this.props.params.id;
     var contest = this.findContestById(testData.contests, contestId);
-    console.log(contest)
-    console.log(this.props.params.id);
     return (
-      <div className="contestContainer">
-        <h1> {contest.name} </h1>
-        {this.getItemsInContest(contest.items)}
+      <div>
+        <div className={styles.pageContainer}>
+          <div className={styles.contestContainer}>
+            {this.getItemsInContest(contest.items)}
+          </div>
+          <div className={styles.map}>
+
+          </div>
+        </div>
       </div>
     );
   }
