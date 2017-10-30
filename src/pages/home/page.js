@@ -12,7 +12,14 @@ class Home extends Component{
   }
 
   componentWillMount() {
-    
+    console.log('Loading stuff at home page thing Tassos...');
+    fetch('/category').then((res)=>{
+      return res.text();
+    }).then((text)=>{
+      console.log(text);
+    }).catch((err)=>{
+      console.log(err.message);
+    })
   }
 
   render() {
