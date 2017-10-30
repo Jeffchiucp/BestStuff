@@ -86,6 +86,7 @@
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.9.0",
     "lodash": "^4.5.0",
+    "node-jsx": "^0.13.3",
     "node-sass": "^3.4.2",
     "pg": "^7.3.0",
     "pg-hstore": "^2.3.2",

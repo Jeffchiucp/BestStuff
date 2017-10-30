@@ -3,35 +3,7 @@ import styles from "./style.css";
 import { Link } from 'react-router';
 //import { ContestCard } from '../../shared/components/ContestCard';
 import { ButtonToolbar, Button } from 'react-bootstrap';
-
-// temporary array of JS Objects representing Contests
-var testData = [
-  {
-    name: "Best Burrito in SF",
-    dateCreated: "10/25/2017",
-    id: 1,
-  },
-  {
-    name: "Best Sushi in SF",
-    dateCreated: "10/12/2017",
-    id: 2,
-  },
-  {
-    name: "Best Vegan Food in the Bay Area",
-    dateCreated: "10/2/2017",
-    id: 3,
-  },
-  {
-    name: "Best Hot Dogs in SF",
-    dateCreated: "10/17/2017",
-    id: 4,
-  },
-  {
-    name: "Best Burgers in Oakland",
-    dateCreated: "9/18/2017",
-    id: 5,
-  }
-]
+import testData from '../../testData.js';
 
 class ContestCard extends Component {
   constructor(props) {
@@ -48,10 +20,9 @@ class ContestCard extends Component {
 }
 
 class Home extends Component{
-
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
 
   componentWillMount() {
@@ -60,7 +31,7 @@ class Home extends Component{
 
   getAllContests() {
     // TODO: replace local test variable w/ fetch call to backend
-    return testData.map((contest, index) => {
+    return testData.items.map((contest, index) => {
       return <ContestCard key={index} name={contest.name} id={contest.id}/>
     })
   }

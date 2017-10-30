@@ -1,9 +1,16 @@
-var express = require('express')
-var path = require('path')
-var webpack = require('webpack')
-var config = require('./webpack.config.development')
-var app = express()
-var compiler = webpack(config)
+var express = require('express');
+var path = require('path');
+var webpack = require('webpack');
+var config = require('./webpack.config.development');
+var app = express();
+var compiler = webpack(config);
+// var React = require('react');
+// require('node-jsx').install({
+//   harmony: true,
+//   extension: '.jsx'
+// });
+// var Contest = React.createFactory(require('./src/pages/contest/page')); // returns a function
+
 // var db = require('./models');
 
 var middleware = require('webpack-dev-middleware')(compiler, {
@@ -30,6 +37,17 @@ app.use(require('webpack-hot-middleware')(compiler, {
 // });
 
 app.use(express.static(path.join(__dirname, '/dist')))
+
+// router.get('/contest/:id', function (req, res) {
+//   console.log("server code running!");
+//   var markup = React.renderToString(Contest());
+//   console.log(markup);
+//   res.render(markup);
+// });
+
+app.get('/', function(req, res) {
+  console.log("got index");
+})
 
 require('./controllers/categories')
 
