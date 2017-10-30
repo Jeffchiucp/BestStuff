@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import styles from "./style.css";
 import { Link } from 'react-router';
-//import { ContestCard } from '../../shared/components/ContestCard';
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import testData from '../../testData.js';
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import MapContainer from '../../components/MapContainer';
 const MAPS = "AIzaSyBBYy-u-ZsF-3krZWO2fpqp2LYp2noQRbs";
 const PLACES = "AIzaSyCh4He2DUJ9cCgC6kl31vAmpSH2cqGq0r4";
 
@@ -44,10 +45,6 @@ export default class Contest extends Component{
     })
   }
 
-  getMap(lat, lng) {
-    
-  }
-
   render() {
     var contestId = this.props.params.id;
     var contest = this.findContestById(testData.contests, contestId);
@@ -58,7 +55,7 @@ export default class Contest extends Component{
             {this.getItemsInContest(contest.items)}
           </div>
           <div className={styles.map}>
-
+            <MapContainer lng={contest.lng} lat={contest.lat}/>
           </div>
         </div>
       </div>
