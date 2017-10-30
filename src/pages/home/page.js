@@ -31,7 +31,7 @@ class Home extends Component{
 
   getAllContests() {
     // TODO: replace local test variable w/ fetch call to backend
-    return testData.items.map((contest, index) => {
+    return testData.contests.map((contest, index) => {
       return <ContestCard key={index} name={contest.name} id={contest.id}/>
     })
   }

@@ -3,4 +3,13 @@
 .contestContainer {
   display: flex;
   padding: 20px;
+
+}
+
+.itemName {
+  color: red;
+}
+
+.itemLocation {
+  color: green;
 }
