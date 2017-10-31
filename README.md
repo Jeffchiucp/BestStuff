@@ -25,7 +25,12 @@ heroku create myapp
 git push heroku master
 ```
 
+### TODO
+- Set up a server to fix the refresh page issue (see [this](https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writting-manually) Stack Overflow question for more information)
+- Write responsive css for mobile usage
+- Deal w/ security of API keys (and get new API keys...)
+
 -------------------
 
-Boilerplate starter created by 
+Boilerplate starter created by
 bharanim [@bharani91](https://twitter.com/bharani91)

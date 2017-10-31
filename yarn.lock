@@ -2881,6 +2881,12 @@ node-gyp@^3.3.1:
     tar "^2.0.0"
     which "1"
 
+node-jsx@^0.13.3:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/node-jsx/-/node-jsx-0.13.3.tgz#3d0568c10601c72f154e872d0e6b9cdf0a6dc4f8"
+  dependencies:
+    jstransform "11"
+
 node-libs-browser@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/node-libs-browser/-/node-libs-browser-0.7.0.tgz#3e272c0819e308935e26674408d7af0e1491b83b"
