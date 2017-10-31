@@ -33,7 +33,7 @@ class Home extends Component{
   render() {
     return (
       <div className={styles.content}>
-        <h1 className="page-title">iHangry</h1>
+        <h1 className="page-title">BestStuff</h1>
         {this.getAllContests()}
       </div>
     );

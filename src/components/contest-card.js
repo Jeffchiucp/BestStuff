@@ -14,7 +14,7 @@ export default class ContestCard extends Component {
     return (
       <Link to={ `/contest/${this.props.id}` } className={paperKit.card} data-background="color" data-color="orange" data-radius="none">
         <div className={paperKit.cardBlock}>
-          <h3 className={paperKit.cardCategory}> {this.props.name} </h3>
+          <h3 className={paperKit.cardTitle}> {this.props.name} </h3>
         </div>
       </Link>
     );
