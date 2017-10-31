@@ -1074,7 +1074,7 @@ textarea.form-control {
   margin-bottom: 1rem;
 }
 
-.card-form-horizontal .card-block .form-group {
+.card-form-horizontal .cardBlock .form-group {
   margin-bottom: 0;
 }
 
@@ -1820,15 +1820,15 @@ textarea.form-control {
 .section-image .category,
 .section-image .description,
 .section-image .card-plain .card-description,
-.section-image .card-plain .card-category,
+.section-image .card-plain .cardCategory,
 .section-gold .category,
 .section-gold .description,
 .section-gold .card-plain .card-description,
-.section-gold .card-plain .card-category,
+.section-gold .card-plain .cardCategory,
 .section-dark .category,
 .section-dark .description,
 .section-dark .card-plain .card-description,
-.section-dark .card-plain .card-category {
+.section-dark .card-plain .cardCategory {
   color: rgba(255, 255, 255, 0.7);
 }
 .section-image hr,
@@ -8496,7 +8496,7 @@ a.pswp__share--download:hover {
   box-shadow: none;
   border-radius: 0;
 }
-.card.card-plain .card-block {
+.card.card-plain .cardBlock {
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -8518,14 +8518,14 @@ a.pswp__share--download:hover {
   margin: 0px auto;
   margin-bottom: 30px;
 }
-.card.card-testimonial .card-block {
+.card.card-testimonial .cardBlock {
   padding: 15px 30px;
   margin-top: -70px;
 }
-.card.card-testimonial .card-block .card-description {
+.card.card-testimonial .cardBlock .card-description {
   font-style: italic;
 }
-.card.card-testimonial .card-block .card-category {
+.card.card-testimonial .cardBlock .cardCategory {
   margin-bottom: 20px;
 }
 .card.card-testimonial .card-avatar {
@@ -8540,7 +8540,7 @@ a.pswp__share--download:hover {
   color: #333333;
   text-align: center;
 }
-.card.card-testimonial .card-footer .card-category {
+.card.card-testimonial .card-footer .cardCategory {
   color: #9A9A9A;
 }
 .card.card-testimonial .card-footer .card-avatar {
@@ -8564,13 +8564,13 @@ a.pswp__share--download:hover {
   padding-bottom: 25px;
   border-bottom: 1px solid #DDDDDD;
 }
-.card.card-contact .card-block .card-icon {
+.card.card-contact .cardBlock .card-icon {
   float: left;
   margin-top: 24px;
   margin-right: 10px;
   border: 0;
 }
-.card.card-contact .card-block .card-icon i {
+.card.card-contact .cardBlock .card-icon i {
   font-size: 30px;
   padding: 25px;
   width: 50px;
@@ -8668,7 +8668,7 @@ a.pswp__share--download:hover {
   margin-top: -1px;
   opacity: .6;
 }
-.card .card-category {
+.card .cardCategory {
   color: #9A9A9A;
 }
 .card .category-social .fa {
@@ -8692,13 +8692,13 @@ a.pswp__share--download:hover {
 .card .header img {
   width: 100%;
 }
-.card .header .card-category {
+.card .header .cardCategory {
   padding: 15px;
 }
-.card .card-block .card-footer {
+.card .cardBlock .card-footer {
   padding: 0;
 }
-.card .card-block .card-description + .card-footer {
+.card .cardBlock .card-description + .card-footer {
   padding-top: 10px;
 }
 .card .more {
@@ -8739,7 +8739,7 @@ a.pswp__share--download:hover {
 .card:hover .header .actions {
   opacity: 1;
 }
-.card .card-category i,
+.card .cardCategory i,
 .card .label i {
   font-size: 15px;
 }
@@ -8747,13 +8747,13 @@ a.pswp__share--download:hover {
   margin: 0;
   padding: 30px 0 0;
 }
-.card .card-block {
+.card .cardBlock {
   padding: 20px;
 }
-.card .card-block .card-title {
+.card .cardBlock .card-title {
   margin: 5px 0 0 0;
 }
-.card .card-block .card-category ~ .card-title {
+.card .cardBlock .cardCategory ~ .card-title {
   margin-top: 5px;
 }
 .card .card-text {
@@ -8804,7 +8804,7 @@ a.pswp__share--download:hover {
   font-size: 80px;
   padding: 22px;
 }
-.card.card-with-border .card-block {
+.card.card-with-border .cardBlock {
   padding: 15px 15px 25px 15px;
 }
 .card.card-with-border .card-footer {
@@ -8822,7 +8822,7 @@ a.pswp__share--download:hover {
   z-index: 1;
   border-radius: 5px;
 }
-.card.card-just-text .card-block {
+.card.card-just-text cardBlock {
   padding: 50px 65px;
   text-align: center;
 }
@@ -8840,7 +8840,7 @@ a.pswp__share--download:hover {
   background-size: cover;
   text-align: center;
 }
-.card[data-background="image"] .card-block {
+.card[data-background="image"] cardBlock {
   position: relative;
   z-index: 2;
   min-height: 280px;
@@ -8866,7 +8866,7 @@ a.pswp__share--download:hover {
   background-color: rgba(0, 0, 0, 0.56);
   border-radius: 12px;
 }
-.card[data-background="image"] .card-category {
+.card[data-background="image"] .cardCategory {
   color: #FFFFFF;
 }
 .card[data-background="image"] .image, .card[data-background="color"] .image, .card[data-color] .image {
@@ -8879,27 +8879,27 @@ a.pswp__share--download:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 .card[data-background="image"] .card-title,
-.card[data-background="image"] .card-category,
+.card[data-background="image"] .cardCategory,
 .card[data-background="image"] .card-text,
-.card[data-background="image"] .card-block,
+.card[data-background="image"] .cardBlock,
 .card[data-background="image"] .card-footer,
 .card[data-background="image"] .stats,
 .card[data-background="image"] small,
 .card[data-background="image"] [class*="text-"],
 .card[data-background="image"] ul li b,
 .card[data-background="image"] a:not(.btn), .card[data-background="color"] .card-title,
-.card[data-background="color"] .card-category,
+.card[data-background="color"] .cardCategory,
 .card[data-background="color"] .card-text,
-.card[data-background="color"] .card-block,
+.card[data-background="color"] .cardBlock,
 .card[data-background="color"] .card-footer,
 .card[data-background="color"] .stats,
 .card[data-background="color"] small,
 .card[data-background="color"] [class*="text-"],
 .card[data-background="color"] ul li b,
 .card[data-background="color"] a:not(.btn), .card[data-color] .card-title,
-.card[data-color] .card-category,
+.card[data-color] .cardCategory,
 .card[data-color] .card-text,
-.card[data-color] .card-block,
+.card[data-color] .cardBlock,
 .card[data-color] .card-footer,
 .card[data-color] .stats,
 .card[data-color] small,
@@ -8962,10 +8962,10 @@ a.pswp__share--download:hover {
   background-size: cover;
   border-radius: 12px 12px 0 0;
 }
-.card-profile .card-block .card-title {
+.card-profile .cardBlock .card-title {
   margin-top: 5px !important;
 }
-.card-profile .card-block .card-category {
+.card-profile .cardBlock .cardCategory {
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -8986,10 +8986,10 @@ a.pswp__share--download:hover {
 .card-pricing {
   text-align: center;
 }
-.card-pricing .card-block {
+.card-pricing .cardBlock {
   padding: 15px !important;
 }
-.card-pricing .card-category {
+.card-pricing .cardCategory {
   margin: 10px 0 10px;
   color: #333333;
 }
@@ -9051,7 +9051,7 @@ a.pswp__share--download:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.card-pricing.card-plain .card-category,
+.card-pricing.card-plain .cardCategory,
 .card-pricing.card-plain .card-title {
   color: #333333;
 }
@@ -9117,18 +9117,18 @@ a.pswp__share--download:hover {
   padding-top: 3px;
   text-overflow: ellipsis;
 }
-.card-image .card-block {
+.card-image .cardBlock {
   min-height: 50px;
   padding: 0 4px 0.5em;
   position: relative;
 }
-.card-image .card-block .author img {
+.card-image .cardBlock .author img {
   height: 40px;
   width: 40px;
   margin-bottom: 5px;
   border-radius: 50%;
 }
-.card-image .card-block .name {
+.card-image .cardBlock .name {
   color: #66615b;
   font-size: 1.2em;
   font-weight: bold;
@@ -9138,14 +9138,14 @@ a.pswp__share--download:hover {
   padding-top: 3px;
   text-overflow: ellipsis;
 }
-.card-image .card-block .name:hover, .card-image .card-block .name:active, .card-image .card-block .name:focus {
+.card-image .cardBlock .name:hover, .card-image .cardBlock .name:active, .card-image .cardBlock .name:focus {
   color: #403D39;
 }
-.card-image .card-block .meta {
+.card-image .cardBlock .meta {
   color: #ccc;
   font-size: 0.8em;
 }
-.card-image .card-block .actions {
+.card-image .cardBlock .actions {
   float: right;
   font-size: 0.875em;
   line-height: 2.6;
@@ -9154,35 +9154,35 @@ a.pswp__share--download:hover {
   top: 36px;
   z-index: 1;
 }
-.card-image .card-block .actions .btn.btn-simple {
+.card-image .cardBlock .actions .btn.btn-simple {
   padding-left: 2px;
 }
-.card-image .card-block-center {
+.card-image .cardBlock-center {
   text-align: center;
 }
-.card-image .card-block-center .author {
+.card-image .cardBlock-center .author {
   position: relative;
   display: inline-block;
   text-align: left;
   margin: 20px auto 0;
 }
-.card-image .card-block-center .author img {
+.card-image .cardBlock-center .author img {
   position: absolute;
   left: 0;
   top: 0;
 }
-.card-image .card-block-center .author .text {
+.card-image .cardBlock-center .author .text {
   padding-left: 50px;
 }
 
-.card-product .card-block .card-description .name {
+.card-product .cardBlock .card-description .name {
   margin-top: 20px;
 }
-.card-product .card-block .card-text {
+.card-product .cardBlock .card-text {
   display: inline-block;
   margin-right: 65px;
 }
-.card-product .card-block .actions h5 {
+.card-product .cardBlock .actions h5 {
   color: #403D39;
 }
 .card-product .image-plain {
@@ -9203,7 +9203,7 @@ a.pswp__share--download:hover {
 .card-product .author .card-title small {
   color: #ccc;
 }
-.card-product .author .card-category {
+.card-product .author .cardCategory {
   margin-bottom: 15px;
 }
 .card-product .card-img-top {
@@ -9218,7 +9218,7 @@ a.pswp__share--download:hover {
   color: #FFFFFF;
 }
 
-.page-header .card-pricing.card-plain .card-category,
+.page-header .card-pricing.card-plain .cardCategory,
 .page-header .card-pricing.card-plain .card-title {
   color: #FFFFFF;
 }
@@ -9663,7 +9663,7 @@ body {
   z-index: 2;
   text-align: center;
 }
-.background-img .card.card-just-text .card-block {
+.background-img .card.card-just-text .cardBlock {
   padding: 50px 30px;
 }
 .background-img .card .icon {
@@ -9786,7 +9786,7 @@ body {
   padding-top: 50px;
 }
 
-.header-2 .header .card-block {
+.header-2 .header .cardBlock {
   padding: 20px 20px 5px 20px;
 }
 
@@ -9904,7 +9904,7 @@ body {
 .card.card-blog [class*=col-] .card-image .img {
   border-radius: 12px;
 }
-.card.card-blog .card-category {
+.card.card-blog .cardCategory {
   padding-top: 10px;
 }
 
@@ -9916,10 +9916,10 @@ body {
   margin-bottom: 40px;
 }
 
-.card.card-profile [class*=col-] .card-block {
+.card.card-profile [class*=col-] .cardBlock {
   padding-top: 0px;
 }
-.card.card-profile [class*=col-] .card-block .card-title {
+.card.card-profile [class*=col-] .cardBlock .card-title {
   margin-top: 10px !important;
 }
 
@@ -9930,7 +9930,7 @@ body {
 .section .page-header .container {
   z-index: 2;
 }
-.section .page-header .card .card-block .author .avatar {
+.section .page-header .card .cardBlock .author .avatar {
   width: 130px;
   height: 130px;
   border: 0;
@@ -9957,7 +9957,7 @@ body {
   margin-top: 50px;
 }
 
-.projects-1 .card-background-image .card-category {
+.projects-1 .card-background-image .cardCategory {
   color: #FFFFFF;
 }
 .projects-1 .project-pills {
@@ -9970,7 +9970,7 @@ body {
   justify-content: center;
   min-height: 400px;
 }
-.project-4 .card[data-background] .card-block {
+.project-4 .card[data-background] .cardBlock {
   min-height: auto;
   -webkit-box-flex: initial;
   -webkit-flex: initial;
@@ -9986,7 +9986,7 @@ body {
 .project-4 .info {
   padding-top: 0 !important;
 }
-.project-4 .card.card-plain .card-block {
+.project-4 .card.card-plain .cardBlock {
   margin-top: 60px;
 }
 
@@ -10081,7 +10081,7 @@ body {
   height: 100%;
   position: absolute;
 }
-#contact-us .card-contact .card-block .checkbox {
+#contact-us .card-contact .cardBlock .checkbox {
   margin-top: 5px;
 }
 
