@@ -1,10 +1,17 @@
-var express = require('express')
-var path = require('path')
-var webpack = require('webpack')
-var config = require('./webpack.config.development')
-var app = express()
-var compiler = webpack(config)
-var db = require('./models');
+var express = require('express');
+var path = require('path');
+var webpack = require('webpack');
+var config = require('./webpack.config.development');
+var app = express();
+var compiler = webpack(config);
+// var React = require('react');
+// require('node-jsx').install({
+//   harmony: true,
+//   extension: '.jsx'
+// });
+// var Contest = React.createFactory(require('./src/pages/contest/page')); // returns a function
+
+// var db = require('./models');
 
 var middleware = require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath,
@@ -31,12 +38,12 @@ app.use(require('webpack-hot-middleware')(compiler, {
 
 app.use(express.static(path.join(__dirname, '/dist')))
 
-require('./controllers/categories')
+require('./controllers/categories')(app)
 
 app.listen(config._hotPort, 'localhost', function (err) {
   if (err) {
     console.log(err)
   }
-  db.sequelize.sync();
+  // db.sequelize.sync();
   console.info('==> Listening on port %s. Open up http://localhost:%s/ in your browser.', config._hotPort, config._hotPort)
 })

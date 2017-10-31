@@ -1,0 +1,39 @@
+
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.map {
+  flex: 2;
+  background-color: green;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contestContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.itemContainer {
+  padding-left: 20px;
+  max-width: 500px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: green;
+}
+
+.itemName {
+  color: red;
+}
+
+.itemLocation {
+  color: green;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
