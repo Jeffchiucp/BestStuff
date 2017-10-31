@@ -38,18 +38,7 @@ app.use(require('webpack-hot-middleware')(compiler, {
 
 app.use(express.static(path.join(__dirname, '/dist')))
 
-// router.get('/contest/:id', function (req, res) {
-//   console.log("server code running!");
-//   var markup = React.renderToString(Contest());
-//   console.log(markup);
-//   res.render(markup);
-// });
-
-app.get('/', function(req, res) {
-  console.log("got index");
-})
-
-require('./controllers/categories')
+require('./controllers/categories')(app)
 
 app.listen(config._hotPort, 'localhost', function (err) {
   if (err) {

@@ -4,7 +4,7 @@
   "description": "Food review app for Make School's Web 3 - Advanced Web Patterns.",
   "main": "src/main.js",
   "homepage": "https://ihangry.herokuapp.com",
-  "author": "Tassos Lambrou, Briant Elliot, Alirie Gray, Jeff Chui",
+  "author": "Tassos Lambrou, Briant Elliot, Alirie Gray, Rohan Mishra",
   "license": "MIT",
   "repository": {
     "type": "git",
