@@ -31,7 +31,7 @@ app.use(require('webpack-hot-middleware')(compiler, {
 
 app.use(express.static(path.join(__dirname, '/dist')))
 
-require('./controllers/categories')
+require('./controllers/categories')(app)
 
 app.listen(config._hotPort, 'localhost', function (err) {
   if (err) {
