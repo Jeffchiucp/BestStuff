@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, '/dist')))
 
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'dist/index.html'))
-})
+});
 
 require('./controllers/categories')(app)
 
@@ -17,4 +17,4 @@ app.listen(app.get('port'), function (err) {
     console.log(err)
   }
   console.info('==> Tassos! I\'m Listening on port %s.', app.get('port'));
-})
+});
