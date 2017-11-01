@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc0b874c-5e8f-4f4c-a866-7597fbb7285b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/contests.js" afterPath="$PROJECT_DIR$/controllers/contests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/items.js" afterPath="$PROJECT_DIR$/controllers/items.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/user.js" afterPath="$PROJECT_DIR$/controllers/user.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,41 +19,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.production.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.production.js">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/models/item.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="items.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/items.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="54" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contests.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/contests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="390">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -63,7 +44,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1509494974000" expanded="true" signature="333:407" ph="{...}" />
+                <marker date="1509494974000" expanded="true" signature="413:508" ph="{...}" />
+                <marker date="1509494974000" expanded="true" signature="557:653" ph="{...}" />
+                <marker date="1509494974000" expanded="true" signature="674:772" ph="{...}" />
+                <marker date="1509494974000" expanded="true" signature="813:886" ph="{...}" />
+                <marker date="1509494974000" expanded="true" signature="846:884" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,13 +60,47 @@
         <entry file="file://$PROJECT_DIR$/src/testData.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="404">
-              <caret line="113" column="2" lean-forward="true" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
-              <folding />
+              <caret line="113" column="2" lean-forward="false" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
+              <folding>
+                <marker date="1509497409000" expanded="true" signature="70:2020" ph="{...}" />
+                <marker date="1509497409000" expanded="true" signature="84:2018" ph="[...]" />
+                <marker date="1509497409000" expanded="true" signature="90:495" ph="{&quot;name&quot;: &quot;Best Burrito in SF&quot;...}" />
+                <marker date="1509497409000" expanded="true" signature="226:489" ph="[...]" />
+                <marker date="1509497409000" expanded="true" signature="236:395" ph="{&quot;name&quot;: 'Sushirrito'...}" />
+                <marker date="1509497409000" expanded="true" signature="405:480" ph="{&quot;name&quot;: 'Vegan Burrito'...}" />
+                <marker date="1509497409000" expanded="true" signature="501:809" ph="{&quot;name&quot;: &quot;Best Sushi in SF&quot;...}" />
+                <marker date="1509497409000" expanded="true" signature="635:803" ph="[...]" />
+                <marker date="1509497409000" expanded="true" signature="645:713" ph="{&quot;name&quot;: 'Tuna roll'...}" />
+                <marker date="1509497409000" expanded="true" signature="723:794" ph="{&quot;name&quot;: 'Sushirrito'...}" />
+                <marker date="1509497409000" expanded="true" signature="815:1147" ph="{&quot;name&quot;: &quot;Best Vegan Food in the Bay Area&quot;...}" />
+                <marker date="1509497409000" expanded="true" signature="963:1141" ph="[...]" />
+                <marker date="1509497409000" expanded="true" signature="973:1048" ph="{&quot;name&quot;: 'Vegan Burrito'...}" />
+                <marker date="1509497409000" expanded="true" signature="1058:1133" ph="{&quot;name&quot;: 'Tofu Noodle Soup'...}" />
+                <marker date="1509497409000" expanded="true" signature="1153:1582" ph="{&quot;name&quot;: &quot;Best Hot Dogs in SF&quot;...}" />
+                <marker date="1509497409000" expanded="true" signature="1290:1576" ph="[...]" />
+                <marker date="1509497409000" expanded="true" signature="1300:1384" ph="{&quot;name&quot;: 'Regular HotDog'...}" />
+                <marker date="1509497409000" expanded="true" signature="1394:1474" ph="{&quot;name&quot;: 'Fancy HotDog'...}" />
+                <marker date="1509497409000" expanded="true" signature="1484:1568" ph="{&quot;name&quot;: 'Fancier HotDog'...}" />
+                <marker date="1509497409000" expanded="true" signature="1588:2014" ph="{&quot;name&quot;: &quot;Best Burgers in Oakland&quot;...}" />
+                <marker date="1509497409000" expanded="true" signature="1728:2008" ph="[...]" />
+                <marker date="1509497409000" expanded="true" signature="1738:1826" ph="{&quot;name&quot;: &quot;Bl00 Ch33s3 Burg3r&quot;...}" />
+                <marker date="1509497409000" expanded="true" signature="1836:1916" ph="{&quot;name&quot;: 'The Ethical Burger'...}" />
+                <marker date="1509497409000" expanded="true" signature="1926:2000" ph="{&quot;name&quot;: 'Jalapeno'...}" />
+                <marker date="1509497409000" expanded="true" signature="2052:2144" ph="{&quot;username&quot;: 'bob'...}" />
+                <marker date="1509497409000" expanded="true" signature="2181:2208" ph="{&quot;name&quot;: 'best burrito'...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,14 +110,22 @@
       <list>
         <option value="$PROJECT_DIR$/server.production.js" />
         <option value="$PROJECT_DIR$/src/testData.js" />
-        <option value="$PROJECT_DIR$/controllers/items.js" />
         <option value="$PROJECT_DIR$/controllers/contests.js" />
+        <option value="$PROJECT_DIR$/controllers/user.js" />
+        <option value="$PROJECT_DIR$/controllers/items.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
     <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -173,7 +203,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
@@ -184,6 +214,8 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -211,12 +243,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508870751674</updated>
       <workItem from="1508870754241" duration="2413000" />
-      <workItem from="1509475334019" duration="8105000" />
+      <workItem from="1509475334019" duration="9214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10518000" />
+    <option name="totallyTimeSpent" value="11627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -231,6 +263,7 @@
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -240,7 +273,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -264,26 +296,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.production.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/models/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1509494974000" expanded="true" signature="333:407" ph="{...}" />
+            <marker date="1509494974000" expanded="true" signature="413:508" ph="{...}" />
+            <marker date="1509494974000" expanded="true" signature="557:653" ph="{...}" />
+            <marker date="1509494974000" expanded="true" signature="674:772" ph="{...}" />
+            <marker date="1509494974000" expanded="true" signature="813:886" ph="{...}" />
+            <marker date="1509494974000" expanded="true" signature="846:884" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
-          <caret line="113" column="2" lean-forward="true" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
+          <caret line="113" column="2" lean-forward="false" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
+          <folding>
+            <marker date="1509497409000" expanded="true" signature="70:2020" ph="{...}" />
+            <marker date="1509497409000" expanded="true" signature="84:2018" ph="[...]" />
+            <marker date="1509497409000" expanded="true" signature="90:495" ph="{&quot;name&quot;: &quot;Best Burrito in SF&quot;...}" />
+            <marker date="1509497409000" expanded="true" signature="226:489" ph="[...]" />
+            <marker date="1509497409000" expanded="true" signature="236:395" ph="{&quot;name&quot;: 'Sushirrito'...}" />
+            <marker date="1509497409000" expanded="true" signature="405:480" ph="{&quot;name&quot;: 'Vegan Burrito'...}" />
+            <marker date="1509497409000" expanded="true" signature="501:809" ph="{&quot;name&quot;: &quot;Best Sushi in SF&quot;...}" />
+            <marker date="1509497409000" expanded="true" signature="635:803" ph="[...]" />
+            <marker date="1509497409000" expanded="true" signature="645:713" ph="{&quot;name&quot;: 'Tuna roll'...}" />
+            <marker date="1509497409000" expanded="true" signature="723:794" ph="{&quot;name&quot;: 'Sushirrito'...}" />
+            <marker date="1509497409000" expanded="true" signature="815:1147" ph="{&quot;name&quot;: &quot;Best Vegan Food in the Bay Area&quot;...}" />
+            <marker date="1509497409000" expanded="true" signature="963:1141" ph="[...]" />
+            <marker date="1509497409000" expanded="true" signature="973:1048" ph="{&quot;name&quot;: 'Vegan Burrito'...}" />
+            <marker date="1509497409000" expanded="true" signature="1058:1133" ph="{&quot;name&quot;: 'Tofu Noodle Soup'...}" />
+            <marker date="1509497409000" expanded="true" signature="1153:1582" ph="{&quot;name&quot;: &quot;Best Hot Dogs in SF&quot;...}" />
+            <marker date="1509497409000" expanded="true" signature="1290:1576" ph="[...]" />
+            <marker date="1509497409000" expanded="true" signature="1300:1384" ph="{&quot;name&quot;: 'Regular HotDog'...}" />
+            <marker date="1509497409000" expanded="true" signature="1394:1474" ph="{&quot;name&quot;: 'Fancy HotDog'...}" />
+            <marker date="1509497409000" expanded="true" signature="1484:1568" ph="{&quot;name&quot;: 'Fancier HotDog'...}" />
+            <marker date="1509497409000" expanded="true" signature="1588:2014" ph="{&quot;name&quot;: &quot;Best Burgers in Oakland&quot;...}" />
+            <marker date="1509497409000" expanded="true" signature="1728:2008" ph="[...]" />
+            <marker date="1509497409000" expanded="true" signature="1738:1826" ph="{&quot;name&quot;: &quot;Bl00 Ch33s3 Burg3r&quot;...}" />
+            <marker date="1509497409000" expanded="true" signature="1836:1916" ph="{&quot;name&quot;: 'The Ethical Burger'...}" />
+            <marker date="1509497409000" expanded="true" signature="1926:2000" ph="{&quot;name&quot;: 'Jalapeno'...}" />
+            <marker date="1509497409000" expanded="true" signature="2052:2144" ph="{&quot;username&quot;: 'bob'...}" />
+            <marker date="1509497409000" expanded="true" signature="2181:2208" ph="{&quot;name&quot;: 'best burrito'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/contests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -296,26 +370,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.json">
+    <entry file="file://$PROJECT_DIR$/server.production.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/items.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/contests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="390">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding />
         </state>
       </provider>

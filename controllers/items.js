@@ -1,12 +1,12 @@
-var express = require('express');
-var router = express.Router({mergeParams: true});
+//var router = express.Router({mergeParams: true});
 
-var models  = require('../db/models');
+import db from '../models'
+import Sequelize from 'sequelize'
 
 module.exports = (app) => {
 
   // SHOW
-  router.get('/items/:id', (req, res) => {
+  app.get('/items/:id', (req, res) => {
     const itemId = req.params.id;
     db.Item.findById(itemId).then((item) => {
       res.json(item);
@@ -14,10 +14,10 @@ module.exports = (app) => {
   });
 
   // CREATE
-  router.post('/items/create', (req, res) => {
+  app.post('/items/create', (req, res) => {
     req.body.UserId = req.params.id;
 
-    db.item.create(req.body).then((item) => {
+    db.Item.create(req.body).then((item) => {
       res.status(200);
       res.json({msg: 'successfully added', item});
     }).catch((err) => {
@@ -28,7 +28,7 @@ module.exports = (app) => {
   });
 
   // UPDATE
-  router.put('/item/:id/edit', (req, res) => {
+  app.put('/item/:id/edit', (req, res) => {
     const itemId = req.body.params;
     db.Item.update(itemId).then((item) => {
       res.json(200);
@@ -42,7 +42,7 @@ module.exports = (app) => {
 
 
   // DESTROY
-  router.delete('/item/:id', (req, res) => {
+  app.delete('/item/:id', (req, res) => {
     const itemId = req.body.params;
     db.Item.destroy(itemId).then((item) => {
       res.status(200);
