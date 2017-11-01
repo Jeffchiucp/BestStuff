@@ -14,7 +14,7 @@ module.exports = (app) => {
   app.post('/items/create', (req, res) => {
     req.body.UserId = req.params.id;
 
-    models.item.create(req.body).then((item) => {
+    db.item.create(req.body).then((item) => {
       res.status(200);
       res.json({msg: 'successfully added', item});
     }).catch((err) => {
