@@ -1,0 +1,23 @@
+
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.map {
+  
+}
+
+.contestContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+
+h1 {
+  margin-bottom: 8px;
+}

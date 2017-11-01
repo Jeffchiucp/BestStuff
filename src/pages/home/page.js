@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import styles from "./style.css";
 import { Link } from 'react-router';
-//import { ContestCard } from '../../shared/components/ContestCard';
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import testData from '../../testData.js';
 import ContestCard from '../../components/contest-card';

@@ -8460,6 +8460,7 @@ a.pswp__share--download:hover {
   -ms-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
 }
+
 .card.no-transition:hover, .card.page-carousel:hover, .card.card-refine:hover, .card.card-register:hover {
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
   transform: none;
