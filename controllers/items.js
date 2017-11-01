@@ -1,5 +1,7 @@
+//var router = express.Router({mergeParams: true});
+
 import db from '../models'
-import Sequelize from ''
+import Sequelize from 'sequelize'
 
 module.exports = (app) => {
 
@@ -10,11 +12,12 @@ module.exports = (app) => {
       res.json(item);
     });
   });
+
   // CREATE
   app.post('/items/create', (req, res) => {
     req.body.UserId = req.params.id;
 
-    db.item.create(req.body).then((item) => {
+    db.Item.create(req.body).then((item) => {
       res.status(200);
       res.json({msg: 'successfully added', item});
     }).catch((err) => {
