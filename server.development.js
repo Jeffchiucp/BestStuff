@@ -17,13 +17,13 @@ const Sequelize = require('sequelize');
 const sequelize = new Sequelize('beststuff', 'postgres', null, { dialect: 'postgres' });
 
 sequelize
-.authenticate()
-.then(() => {
-  console.log('Connection has been established successfully.');
-})
-.catch(err => {
-  console.error('Unable to connect to the database:', err);
-});
+  .authenticate()
+  .then(() => {
+    console.log('Connection has been established successfully.');
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
 
 var middleware = require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath,
@@ -45,12 +45,13 @@ app.use(require('webpack-hot-middleware')(compiler, {
   log: console.log
 }));
 
-// app.get('*', function response(req, res) {
-//   res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
-//   res.end();
-// });
+app.get('*', function response(req, res) {
+  res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
+  res.end();
+});
 
 app.use(express.static(path.join(__dirname, '/dist')))
+app.use(express.static('public'))
 
 require('./controllers/contests')(app)
 require('./controllers/items')(app)
