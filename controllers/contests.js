@@ -1,4 +1,4 @@
-import db from "../src/pages/contest/page";
+var db = require('../src/pages/contest/page');
 
 var express = require('express');
 
@@ -56,4 +56,3 @@ module.exports = (app) => {
   });
 
 };
-
