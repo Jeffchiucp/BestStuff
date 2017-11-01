@@ -1,5 +1,5 @@
 var db = require('../db/models')
- 
+
 module.exports = (app) => {
 
   // SHOW
