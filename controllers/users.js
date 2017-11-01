@@ -4,7 +4,7 @@ import Sequelize from 'sequelize'
 module.exports = (app) => {
 
   // SHOW
-  app.get('/user/:id', (req, res) => {
+  app.get('/users/:id', (req, res) => {
     const userId = req.params.id;
     db.User.findById(userId).then((user) => {
       res.json(user);
@@ -12,7 +12,7 @@ module.exports = (app) => {
   });
 
   // CREATE
-  app.post('/user/create', (req, res) => {
+  app.post('/users/create', (req, res) => {
     req.body.UserId = req.params.id;
 
     db.User.create(req.body).then((user) => {
@@ -26,7 +26,7 @@ module.exports = (app) => {
   });
 
   // UPDATE
-  app.put('/user/:id/edit', (req, res) => {
+  app.put('/users/:id/edit', (req, res) => {
     const userId = req.body.params;
     db.User.update(userId).then((user) => {
       res.json(200);
@@ -40,7 +40,7 @@ module.exports = (app) => {
 
 
   // DESTROY
-  app.delete('/user/:id', (req, res) => {
+  app.delete('/users/:id', (req, res) => {
     const userId = req.body.params;
     db.User.destroy(userId).then((user) => {
       res.status(200);

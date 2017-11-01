@@ -10,7 +10,9 @@ app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'dist/index.html'))
 });
 
-require('./controllers/categories')(app)
+require('./controllers/contests')(app)
+require('./controllers/items')(app)
+require('./controllers/users')(app)
 
 app.listen(app.get('port'), function (err) {
   if (err) {
