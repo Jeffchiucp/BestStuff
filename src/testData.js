@@ -10,7 +10,10 @@ export default {
       items: [
         {
           name: 'Sushirrito',
-          loc: 'Sushi Garden'
+          placeName: 'Sushi Garden',
+          placeId: '12934834',
+          lat: 37.7749,
+          long: 122.4194,
         },
         {
           name: 'Vegan Burrito',

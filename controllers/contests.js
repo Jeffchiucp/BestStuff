@@ -1,6 +1,6 @@
 module.exports = (app) => {
 
-  app.get('/category', (req, res) => {
+  app.get('/contests', (req, res) => {
     console.log("*********************** Tassos ****************************")
     res.send('It works!')
   })

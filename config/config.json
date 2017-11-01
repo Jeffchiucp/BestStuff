@@ -2,21 +2,21 @@
   "development": {
     "username": "postgres",
     "password": null,
-    "database": "ihangry_development",
+    "database": "beststuff",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": null,
-    "database": "ihangry_test",
+    "database": "beststuff",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "root",
+    "username": "postgres",
     "password": null,
-    "database": "ihangry_production",
+    "database": "beststuff",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
