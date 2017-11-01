@@ -1,17 +1,20 @@
-import db from '../models'
-import Sequelize from ''
+var express = require('express');
+var router = express.Router({mergeParams: true});
+
+var models  = require('../db/models');
 
 module.exports = (app) => {
 
   // SHOW
-  app.get('/items/:id', (req, res) => {
+  router.get('/items/:id', (req, res) => {
     const itemId = req.params.id;
     db.Item.findById(itemId).then((item) => {
       res.json(item);
     });
   });
+
   // CREATE
-  app.post('/items/create', (req, res) => {
+  router.post('/items/create', (req, res) => {
     req.body.UserId = req.params.id;
 
     db.item.create(req.body).then((item) => {
@@ -25,7 +28,7 @@ module.exports = (app) => {
   });
 
   // UPDATE
-  app.put('/item/:id/edit', (req, res) => {
+  router.put('/item/:id/edit', (req, res) => {
     const itemId = req.body.params;
     db.Item.update(itemId).then((item) => {
       res.json(200);
@@ -39,7 +42,7 @@ module.exports = (app) => {
 
 
   // DESTROY
-  app.delete('/item/:id', (req, res) => {
+  router.delete('/item/:id', (req, res) => {
     const itemId = req.body.params;
     db.Item.destroy(itemId).then((item) => {
       res.status(200);
