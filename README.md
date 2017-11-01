@@ -1,6 +1,6 @@
 # iHangry
 
-Food review app for Make School's Web 3 - Advanced Web Patterns. This project was built using a boilerplate called [React-Express-Starter](https://github.com/bharani91/react-express-starter) and uses React Router, Webpack, HMR, PostCSS & Express. This project also uses a boilerplate CSS theme for bootstrap known as [Paper Kit Pro 2](https://www.creative-tim.com/product/paper-kit-2-pro).
+Item review app for Make School's Web 3 - Advanced Web Patterns. This project was built using a boilerplate called [React-Express-Starter](https://github.com/bharani91/react-express-starter) and uses React Router, Webpack, HMR, PostCSS & Express. This project also uses a boilerplate CSS theme for bootstrap known as [Paper Kit Pro 2](https://www.creative-tim.com/product/paper-kit-2-pro).
 
 ### Development
 ```
