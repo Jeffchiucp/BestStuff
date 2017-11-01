@@ -33,9 +33,5 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-/* Associations */
-//db.contest.hasMany(item);
-//db.item.hasMany(contest);
-//db.user.hasMany(contest); // is this real?
-
 module.exports = db;
+
