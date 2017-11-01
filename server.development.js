@@ -13,6 +13,18 @@ var compiler = webpack(config);
 
 // var db = require('./models');
 
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('beststuff', 'postgres', null, { dialect: 'postgres' });
+
+sequelize
+.authenticate()
+.then(() => {
+  console.log('Connection has been established successfully.');
+})
+.catch(err => {
+  console.error('Unable to connect to the database:', err);
+});
+
 var middleware = require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath,
   contentBase: 'src',
@@ -26,6 +38,8 @@ var middleware = require('webpack-dev-middleware')(compiler, {
   }
 });
 
+
+
 app.use(middleware);
 app.use(require('webpack-hot-middleware')(compiler, {
   log: console.log
@@ -38,7 +52,9 @@ app.use(require('webpack-hot-middleware')(compiler, {
 
 app.use(express.static(path.join(__dirname, '/dist')))
 
-require('./controllers/categories')(app)
+require('./controllers/contests')(app)
+require('./controllers/items')(app)
+
 
 app.listen(config._hotPort, 'localhost', function (err) {
   if (err) {
