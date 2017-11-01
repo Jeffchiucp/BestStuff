@@ -99,3 +99,16 @@ export default {
     }
   ]
 };
+
+// User example
+const User = {
+  username: 'bob',
+  password: 'password',
+  email: 'test@test.com',
+  photo: '/bob.jpg'
+};
+
+//Contest example
+const Contest = {
+  name: 'best burrito',
+};
