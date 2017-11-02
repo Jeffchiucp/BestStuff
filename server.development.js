@@ -13,6 +13,18 @@ var compiler = webpack(config);
 
 // var db = require('./models');
 
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('beststuff', 'postgres', null, { dialect: 'postgres' });
+
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log('Connection has been established successfully.');
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
+
 var middleware = require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath,
   contentBase: 'src',
@@ -26,19 +38,25 @@ var middleware = require('webpack-dev-middleware')(compiler, {
   }
 });
 
+
+
 app.use(middleware);
 app.use(require('webpack-hot-middleware')(compiler, {
   log: console.log
 }));
 
-// app.get('*', function response(req, res) {
-//   res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
-//   res.end();
-// });
+app.get('*', function response(req, res) {
+  res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
+  res.end();
+});
 
 app.use(express.static(path.join(__dirname, '/dist')))
+app.use(express.static('public'))
 
-require('./controllers/categories')(app)
+require('./controllers/contests')(app)
+require('./controllers/items')(app)
+require('./controllers/users')(app)
+
 
 app.listen(config._hotPort, 'localhost', function (err) {
   if (err) {

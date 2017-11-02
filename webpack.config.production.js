@@ -53,9 +53,12 @@ module.exports = _.extend({}, config, {
         loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
       },
       {
-        test: /\.js?$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel',
+        query: {
+          presets: ['es2015'],
+        }
       },
       {
         test: /\.json?$/,
