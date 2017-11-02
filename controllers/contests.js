@@ -1,8 +1,4 @@
-var db = require('../src/pages/contest/page');
-
-var express = require('express');
-
-var models  = require('../db/models');
+var db = require('../db/models')
 
 module.exports = (app) => {
 
