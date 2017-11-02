@@ -1,6 +1,5 @@
 //var router = express.Router({mergeParams: true});
-
-import db from '../models'
+var db = require('../models');
 import Sequelize from 'sequelize'
 
 module.exports = (app) => {

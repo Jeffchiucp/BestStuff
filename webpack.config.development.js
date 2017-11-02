@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var embedFileSize = 50000;
+var express =  require('express');
 
 module.exports = {
   devtool: 'source-map',

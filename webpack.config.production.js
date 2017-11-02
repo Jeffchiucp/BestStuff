@@ -1,4 +1,5 @@
 var path = require('path');
+var express =  require('express');
 var webpack = require('webpack');
 var config = require('./webpack.config.development.js');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
