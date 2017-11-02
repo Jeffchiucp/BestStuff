@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import styles from "./style.css";
+import styles from "./contestStyle.css";
 import { Link } from 'react-router';
+import paperKit from "../../../public/pk2-pro-html-v2/assets/css/paper-kit.css";
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import testData from '../../testData.js';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
@@ -11,8 +12,8 @@ const PLACES = "AIzaSyCh4He2DUJ9cCgC6kl31vAmpSH2cqGq0r4";
 class ItemCard extends Component {
   render() {
     return(
-      <div className={styles.itemContainer}>
-        <h2> {this.props.name} </h2>
+      <div className={paperKit.card} style={{paddingLeft:40, paddingBottom:20}}>
+        <h2 className={paperKit.cardTitle}> {this.props.name} </h2>
         <p> {this.props.loc} </p>
       </div>
     );
@@ -50,6 +51,7 @@ export default class Contest extends Component{
     var contest = this.findContestById(testData.contests, contestId);
     return (
       <div>
+      <h1> {contest.name} </h1>
         <div className={styles.pageContainer}>
           <div className={styles.contestContainer}>
             {this.getItemsInContest(contest.items)}
