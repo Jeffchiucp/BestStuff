@@ -11,11 +11,8 @@ app.get('*', function (req, res) {
 });
 
 require('./controllers/contests')(app)
-<<<<<<< HEAD
 require('./controllers/items')(app)
 require('./controllers/users')(app)
-=======
->>>>>>> front-end
 
 app.listen(app.get('port'), function (err) {
   if (err) {

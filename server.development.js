@@ -57,11 +57,6 @@ require('./controllers/contests')(app)
 require('./controllers/items')(app)
 require('./controllers/users')(app)
 
-<<<<<<< HEAD
-=======
-require('./controllers/contests')(app)
->>>>>>> front-end
-
 app.listen(config._hotPort, 'localhost', function (err) {
   if (err) {
     console.log(err)
