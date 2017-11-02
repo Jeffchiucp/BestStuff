@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Places = sequelize.define('Places', {
+  var Place = sequelize.define('Place', {
     name: DataTypes.STRING,
     gl_place_id: DataTypes.STRING,
     formatted_address: {
@@ -21,5 +21,5 @@ module.exports = (sequelize, DataTypes) => {
       }
     }
   });
-  return Places;
+  return Place;
 };

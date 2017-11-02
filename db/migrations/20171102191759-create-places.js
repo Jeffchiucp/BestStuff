@@ -11,7 +11,7 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      gl - place - id: {
+      gl_place_id: {
         type: Sequelize.STRING
       },
       formatted_address: {
