@@ -11,6 +11,7 @@ export default {
         {
           name: 'Sushirrito',
           placeName: 'Sushi Garden',
+          loc: 'Sushi Garden',
           placeId: '12934834',
           lat: 37.7749,
           long: 122.4194,
