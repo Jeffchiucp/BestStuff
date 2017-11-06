@@ -30,13 +30,12 @@ git push heroku master
 - Write responsive css for mobile usage
 - Deal w/ security of API keys (and get new API keys...)
 
--------------------
 
 ### Project Built with 
-- React Router
-- Express
-- Sequelize 
-- PostCss
+- [React Router](https://github.com/ReactTraining/react-router)
+- [Express](https://expressjs.com/)
+- [Sequelize](http://docs.sequelizejs.com/)
+- [PostCss](https://github.com/postcss/postcss)
 
 ### Authors
 - [Tassos Laumbrou](https://www.linkedin.com/in/lambrou/) - Front/Back End
@@ -46,6 +45,8 @@ git push heroku master
 
 ### License 
 This project is licensed under the MIT License - see the [LICENSE.](https://tldrlegal.com/license/mit-license) file for details
+
+-------------------
 
 Boilerplate starter created by
 bharanim [@bharani91](https://twitter.com/bharani91)
