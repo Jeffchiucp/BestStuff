@@ -32,5 +32,17 @@ git push heroku master
 
 -------------------
 
+### Project Built with 
+- React Router
+- Express
+- Sequelize 
+- PostCss
+
+### Authors
+- [Tassos Laumbrou](https://www.linkedin.com/in/lambrou/) - Front/Back End
+- Elliot Oliveira - Back End
+- Alirie Gray - Front End 
+- Rohan Mishra  - Back End
+
 Boilerplate starter created by
 bharanim [@bharani91](https://twitter.com/bharani91)
