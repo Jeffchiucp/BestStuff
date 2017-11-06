@@ -40,9 +40,12 @@ git push heroku master
 
 ### Authors
 - [Tassos Laumbrou](https://www.linkedin.com/in/lambrou/) - Front/Back End
-- Elliot Oliveira - Back End
-- Alirie Gray - Front End 
-- Rohan Mishra  - Back End
+- [Elliot Oliveira](https://www.linkedin.com/in/briantoliveira/) - Back End
+- [Alirie Gray](https://www.linkedin.com/in/alirie-gray/) - Front End 
+- [Rohan Mishra](https://www.linkedin.com/in/aboutrohan/)  - Back End
+
+### License 
+This project is licensed under the MIT License - see the [LICENSE.](https://tldrlegal.com/license/mit-license) file for details
 
 Boilerplate starter created by
 bharanim [@bharani91](https://twitter.com/bharani91)
