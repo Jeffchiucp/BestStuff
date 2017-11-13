@@ -50,3 +50,7 @@ This project is licensed under the MIT License - see the [LICENSE.](https://tldr
 
 Boilerplate starter created by
 bharanim [@bharani91](https://twitter.com/bharani91)
+
+![screen shot 2017-11-13 at 2 20 24 pm](https://user-images.githubusercontent.com/24231101/32752571-81cc55f4-c87e-11e7-944d-be024d00fb94.png)
+
+![screen shot 2017-11-13 at 2 21 22 pm](https://user-images.githubusercontent.com/24231101/32752580-880a2ed2-c87e-11e7-8e82-189611485148.png)
